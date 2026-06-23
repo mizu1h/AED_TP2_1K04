@@ -105,9 +105,5 @@ def calcular_monto(ICD10,monto_base,montoAL,montoU,montoMZ,porcentaje,complejida
     if complejidad == "X":
         monto_total += (monto_total * 0.05)
     return monto_total
-def mayor_importe(ICD10,mayor_importe,monto_total,paciente):
-    if mayor_importe < monto_total and ICD10[0] != "U":
-        mayor_importe = monto_total
-        paciente_mayor_importe = paciente
-        return mayor_importe,paciente_mayor_importe
+
 principal()
